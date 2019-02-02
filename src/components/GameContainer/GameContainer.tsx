@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import StartGame from "../../states/startGame/StartGame";
+import StartGame from "../../states/PlayGame/PlayGame";
 import Title from "../../states/title/Title";
 import * as THREE from "three";
 
@@ -31,7 +31,7 @@ export default class GameContainer extends Component {
       case "TITLE":
         return <Title events={{ updateGameState: this.updateGameState }} />;
       case "START_GAME":
-        return <StartGame />;
+        return <PlayGame />;
       default:
         return <Title events={{ updateGameState: this.updateGameState }} />;
     }
