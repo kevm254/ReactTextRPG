@@ -1,2 +1,0 @@
-# ReactTextRPG
-Created with CodeSandbox
